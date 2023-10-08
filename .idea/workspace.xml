@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1965cf1c-daae-474e-9c7a-00ad008d8b41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/analysis_project/commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/templates/analysis/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_project/analysis/templates/analysis/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_project/analysis/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analysis_project/analysis/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_project/analysis/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analysis_project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_project/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_14UhmaB.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_LxKFit1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_bcy0Hrv.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_tGcKmcI.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_v1JcHtE.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +49,14 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/christianashimitra/Documents/programming/development/efflow/analysis_project"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/analysis_project" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/transaction_analyzer" />
       <recent name="$PROJECT_DIR$" />
@@ -93,6 +106,17 @@
                 </map>
               </option>
               <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
             </State>
           </value>
         </entry>
