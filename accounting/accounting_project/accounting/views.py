@@ -1,12 +1,20 @@
 # your_app_name/views.py
 
 from django.shortcuts import render, redirect
-from .forms import TransactionCSVUploadForm
 from django.conf import settings
 import os
+from .forms import TransactionCSVUploadForm
+from .models import TransactionCSV
+
 
 def landing_page(request):
-    return render(request, 'accounting/landing_page.html')
+    # Query the database to retrieve a list of uploaded files
+    uploaded_files = TransactionCSV.objects.all()
+    context = {
+        'uploaded_files': uploaded_files,
+    }
+
+    return render(request, 'accounting/landing_page.html', context)
 
 def upload_csv(request):
     csv_files_directory = os.path.join(settings.MEDIA_ROOT, 'transaction_csv_files')
@@ -19,7 +27,7 @@ def upload_csv(request):
             if uploaded_file.name not in file_list:
                 form.save()
                 # File does not exist, save it
-            return render(request, 'accounting/landing_page.html')
+            return redirect('landing_page')
     else:
         form = TransactionCSVUploadForm()
     return render(request, 'accounting/upload_csv.html', {'form': form})

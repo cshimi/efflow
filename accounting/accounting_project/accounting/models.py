@@ -21,6 +21,5 @@ class TransactionCSV(models.Model):
     uploaded_at = models.DateTimeField(auto_now_add=True)
     #date_from = models.DateField()
     #date_to = models.DateField()
-
     def __str__(self):
         return self.file.name
