@@ -16,10 +16,11 @@ class Transaction(models.Model):
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
-class BankStatementUpload(models.Model):
-    #user = models.ForeignKey(User, on_delete=models.CASCADE)  # Associate uploads with users if needed
-    file = models.FileField(upload_to='bank_statement_uploads/')
+class TransactionCSV(models.Model):
+    file = models.FileField(upload_to='transaction_csv_files/')
     uploaded_at = models.DateTimeField(auto_now_add=True)
+    #date_from = models.DateField()
+    #date_to = models.DateField()
 
     def __str__(self):
         return self.file.name

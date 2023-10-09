@@ -100,3 +100,5 @@ INSTALLED_APPS = [
     # ...
 ]
 ```
+
+commit the first commit for the accounting project

@@ -4,18 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1965cf1c-daae-474e-9c7a-00ad008d8b41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/analysis_project/commands.py" afterDir="false" />
+    <list default="true" id="1965cf1c-daae-474e-9c7a-00ad008d8b41" name="Changes" comment="first commit for the accounting app">
+      <change afterPath="$PROJECT_DIR$/accounting/accounting_project/accounting/templates/accounting/upload_csv.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/templates/analysis/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_project/analysis/templates/analysis/upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_project/analysis/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_project/analysis/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_project/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_14UhmaB.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_LxKFit1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_bcy0Hrv.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_tGcKmcI.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_v1JcHtE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/accounting_project/accounting/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/accounting/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/accounting_project/accounting/templates/accounting/landing_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/accounting/templates/accounting/landing_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/accounting_project/accounting/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/accounting/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/accounting_project/accounting/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/accounting/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/accounting_project/accounting_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/accounting_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/accounting_project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/accounting/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/templates/analysis/display_csv.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/templates/analysis/file_already_exists.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/templates/analysis/file_not_found.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/templates/analysis/file_uploaded.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/templates/analysis/landing_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/templates/analysis/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis_project/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis_project/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis_project/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis_project/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/analysis_project/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/commands.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_copy.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/media/uploads/export_transactions_20231004_copy_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/templates/analysis/display_csv.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/templates/analysis/file_already_exists.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/templates/analysis/file_not_found.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/templates/analysis/file_uploaded.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/templates/analysis/landing_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_project/templates/analysis/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extract_file_information.py" beforeDir="false" afterPath="$PROJECT_DIR$/extract_file_information.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +105,15 @@
       <option name="presentableId" value="Default" />
       <updated>1696411397395</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit for the accounting app">
+      <option name="closed" value="true" />
+      <created>1696849940764</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696849940764</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,5 +162,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit for the accounting app" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit for the accounting app" />
   </component>
 </project>

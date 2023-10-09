@@ -1,10 +1,9 @@
-<!-- your_app_name/templates/your_app_name/landing_page.html -->
+<!-- landing_page.html -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Our Website</title>
     <!-- Add your CSS and JavaScript links here, if needed -->
 </head>
@@ -12,5 +11,23 @@
     <header>
         <h1>Welcome to Our Website</h1>
     </header>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to our website. We are here to provide you with useful information and services.</p>
+        </section>
 
+        <!-- Add a button to navigate to the upload CSV page -->
+        <section>
 
+            <a href="{% url 'upload_csv' %}" class="btn btn-primary">Upload CSV</a>
+        </section>
+        <!-- End of button to upload CSV -->
+
+        <!-- Add more sections and content as needed -->
+    </main>
+    <footer>
+        <p>&copy; 2023 efflow AG</p>
+    </footer>
+</body>
+</html>
