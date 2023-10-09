@@ -44,10 +44,16 @@ def print_data(request):
             # Read and print the data from the CSV file
             data = read_csv_file(file_path)
 
-            # You can customize how you want to display the data, e.g., in an HTML template
-            # Here, we simply convert it to a string and display it in an HttpResponse
+            # Convert the data to a string with proper encoding (UTF-8)
             data_str = "\n".join([str(entry) for entry in data])
-            return HttpResponse(data_str, content_type='text/plain')
+
+            # Create an HTTP response with UTF-8 encoding
+            response = HttpResponse(data_str, content_type='text/plain; charset=utf-8')
+
+            # Set the Content-Disposition header to suggest a file name
+            #response['Content-Disposition'] = f'attachment; filename="{transaction_csv.file.name}"'
+
+            return response
         except TransactionCSV.DoesNotExist:
             return HttpResponse("File not found.", content_type='text/plain')
 
