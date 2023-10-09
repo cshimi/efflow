@@ -40,7 +40,7 @@
             <form method="post" enctype="multipart/form-data" action="{% url 'print_data' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <select id="fileSelect">
+                <select id="fileSelect" name="file_id"> <!-- Add name="file_id" to the select element -->
                     {% for file in uploaded_files %}
                         <option value="{{ file.id }}">{{ file.file.name }}</option>
                     {% endfor %}

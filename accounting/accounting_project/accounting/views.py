@@ -47,7 +47,6 @@ def print_data(request):
             # You can customize how you want to display the data, e.g., in an HTML template
             # Here, we simply convert it to a string and display it in an HttpResponse
             data_str = "\n".join([str(entry) for entry in data])
-
             return HttpResponse(data_str, content_type='text/plain')
         except TransactionCSV.DoesNotExist:
             return HttpResponse("File not found.", content_type='text/plain')
@@ -57,18 +56,16 @@ def print_data(request):
 
 def read_csv_file(file_path):
     data = []
+    with open(file_path, mode='r', encoding='utf-8-sig') as csvfile:
+        csv_reader = csv.reader(csvfile)
+        data = list(csv_reader)
 
-    with open(file_path, 'r', newline='', encoding='utf-8') as csvfile:
-        csvreader = csv.DictReader(csvfile, delimiter='\t')
+    summary = {}
+    for row in data[:5]:
+        key, value = row[0].split(';=')
+        key = key.strip().replace(':', '')
+        summary[key.strip()] = value.strip().strip('"')
 
-        for row in csvreader:
-            entry = {
-                'Date': row['Date'],
-                'Type of transaction': row['Type of transaction'],
-                'Notification text': row['Notification text'],
-                'Credit in CHF': row['Credit in CHF'],
-                'Debit in CHF': row['Debit in CHF'],
-            }
-            data.append(entry)
+    data = data[6:]
 
-    return data
+    return summary, data
