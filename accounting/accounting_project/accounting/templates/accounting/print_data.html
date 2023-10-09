@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print Data</title>
+    <!-- Add your CSS and additional styling here, if needed -->
+</head>
+<body>
+    <header>
+        <h1>CSV Data</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Data from CSV File</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Type of Transaction</th>
+                        <th>Notification Text</th>
+                        <th>Credit in CHF</th>
+                        <th>Debit in CHF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for entry in csv_data %}
+                        <tr>
+                            <td>{{ entry.Date }}</td>
+                            <td>{{ entry.Type_of_transaction }}</td>
+                            <td>{{ entry.Notification_text }}</td>
+                            <td>{{ entry.Credit_in_CHF }}</td>
+                            <td>{{ entry.Debit_in_CHF }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Company Name</p>
+    </footer>
+</body>
+</html>

@@ -17,25 +17,42 @@
             <p>Welcome to our website. We are here to provide you with useful information and services.</p>
         </section>
 
-        <!-- Add a button to navigate to the upload CSV page -->
-        <section>
-            <a href="{% url 'upload_csv' %}" class="btn btn-primary">Upload CSV</a>
-        </section>
-        <!-- End of button to upload CSV -->
-
         <!-- Display the list of already uploaded files -->
         <section>
             <h2>Uploaded Files</h2>
             <ul>
                 {% for file in uploaded_files %}
-                    <li><a href="{{ file.file.url }}" target="_blank">{{ file.file.name }}</a></li>
+                    <li><a>{{ file.file.name }}</a></li>
                 {% empty %}
                     <li>No files have been uploaded yet.</li>
                 {% endfor %}
             </ul>
         </section>
+                <!-- Add a button to navigate to the upload CSV page -->
+        <section>
+            <a href="{% url 'upload_csv' %}" class="btn btn-primary">Upload CSV</a>
+        </section>
+        <!-- End of button to upload CSV -->
         <!-- End of displaying uploaded files -->
+        <!-- Add a scroll-down menu for file selection -->
+        <section>
+            <h2>Select File to Print</h2>
+            <form method="post" enctype="multipart/form-data" action="{% url 'print_data' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <select id="fileSelect">
+                    {% for file in uploaded_files %}
+                        <option value="{{ file.id }}">{{ file.file.name }}</option>
+                    {% endfor %}
+                </select>
+                <button id="printButton" type="submit">Print Selected File</button>
+            </form>
 
+        </section>
+        <!-- End of file selection -->
+
+
+        <!-- End of displaying CSV data -->
         <!-- Add more sections and content as needed -->
     </main>
     <footer>
