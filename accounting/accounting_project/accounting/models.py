@@ -4,7 +4,7 @@ from django.db import models
 
 class Account(models.Model):
     name = models.CharField(max_length=100)
-    balance = models.DecimalField(max_digits=10, decimal_places=2)
+    balance = models.DecimalField(max_digits=10, decimal_places=2, default=0.0)  # Add a default value for balance
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
@@ -22,4 +22,4 @@ class TransactionCSV(models.Model):
     #date_from = models.DateField()
     #date_to = models.DateField()
     def __str__(self):
-        return self.file.name
+        return self.file.namec
