@@ -7,12 +7,11 @@
     <list default="true" id="1965cf1c-daae-474e-9c7a-00ad008d8b41" name="Changes" comment="first commit for the accounting app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounting/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/accounting_project/accounting/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/accounting/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/accounting_project/accounting/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/accounting/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounting/accounting_project/accounting/templates/accounting/print_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/accounting/templates/accounting/print_data.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounting/accounting_project/accounting/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/accounting/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounting/accounting_project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/accounting_project/media/transaction_csv_files/export_transactions_20231004.csv" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/media/export_transactions_20231004.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/accounting_project/media/transaction_csv_files/export_transactions_20231011.csv" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/accounting_project/media/export_transactions_20231011.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extract_file_information.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

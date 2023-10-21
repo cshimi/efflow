@@ -47,7 +47,6 @@
     <table class="transaction-table"> <!-- Apply the CSS class to this table -->
         <tr>
             <th>Date</th>
-            <th>Type of Transaction</th>
             <th>Notification Text</th>
             <th>Credit (CHF)</th>
             <th>Debit (CHF)</th>
@@ -55,7 +54,6 @@
         {% for transaction in transactions %}
             <tr>
                 <td>{{ transaction.date }}</td>
-                <td>{{ transaction.type_of_transaction }}</td>
                 <td>{{ transaction.notification_text }}</td>
                 <td>{{ transaction.credit_in_chf }}</td>
                 <td>{{ transaction.debit_in_chf }}</td>

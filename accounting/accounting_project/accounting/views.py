@@ -51,7 +51,7 @@ def read_csv_file(file_path):
     for row in data:
         date = datetime.strptime(row[0], '%d.%m.%Y').strftime('%Y-%m-%d')  # Format the date
         type_of_transaction = row[1]
-        notification_text = row[2]
+        # notification_text = row[2]
         credit_in_chf = row[3]
         debit_in_chf = row[4]
 

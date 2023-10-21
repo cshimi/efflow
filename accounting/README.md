@@ -235,8 +235,84 @@ For more details on the code and specific functions, please refer to the actual 
 - TransactionCSV is associated with a File. This suggests that TransactionCSV has a relationship with some other class or object named "File."
 
 
-#
+# efflow code 
 ## Activate enviroment 
  ```bash
  /Users/christianashimitra/anaconda3/bin/activate && conda activate /Users/christianashimitra/anaconda3/envs/MachineLearningTraining; 
  ```
+
+## How to get the tree of a folder 
+
+
+## train chat gpt
+get the folder's stracture. 
+ ```bash
+tree 
+```
+
+``` bash
+├── README.md
+└── accounting_project
+    ├── accounting
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── forms.py
+    │   ├── migrations
+    │   │   ├── __init__.py
+    │   │   └── __pycache__
+    │   ├── models.py
+    │   ├── templates
+    │   │   └── accounting
+    │   │       ├── landing_page.html
+    │   │       ├── print_data.html
+    │   │       └── upload_csv.html
+    │   ├── tests.py
+    │   ├── urls.py
+    │   └── views.py
+    ├── accounting_project
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   ├── asgi.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── class_diagram.msc
+    ├── db.sqlite3
+    ├── manage.py
+    ├── media
+    │   └── transaction_csv_files
+    │       └── DFSF.csv
+    └── test.py
+```
+
+
+django application.  
+
+
+
+
+It seems you've provided the directory structure and code for a Django application related to accounting and CSV file processing. Here's a brief overview of the structure and code you've provided:
+
+Directory Structure:
+You have a Django project named "accounting_project" with the following key components:
+A Django app named "accounting" located within the project.
+The "media" directory for storing uploaded CSV files.
+Django project settings in "settings.py".
+Various Django-related files and directories, such as "urls.py," "views.py," "forms.py," and "models.py."
+HTML Templates:
+You've provided three HTML templates:
+"landing_page.html": This template serves as the landing page of your application, displaying information, a list of uploaded files, and a form for selecting and printing a file's data.
+"printing_page.html": This template displays transaction data from a CSV file and provides a link to go back to the landing page.
+"upload_csv.html": This template is used for uploading CSV files and includes a form for file upload.
+Forms:
+The "forms.py" file contains a form class called "TransactionCSVUploadForm" used for uploading CSV files.
+Models:
+The "models.py" file defines models for your application, including "Account," "Category," "Transaction," and "TransactionCSV" for storing transaction-related data and uploaded CSV files.
+URL Routing:
+The "urls.py" file defines URL patterns for your Django app, including routes for the landing page, uploading CSV files, and printing CSV data.
+Views:
+The "views.py" file contains view functions that handle rendering templates, file upload, and processing and displaying CSV data. Notably, there is a function named "print_data" that reads and processes the CSV data.
+Settings:
+The "settings.py" file includes various settings for your Django project, such as the database configuration, media and static file settings, installed apps, and other project-specific configurations.
