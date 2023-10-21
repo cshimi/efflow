@@ -45,8 +45,6 @@ def read_csv_file(file_path):
         key, value = row[0], row[1]
         key = key.strip('"').strip(':').replace(' ', '_')
         summary[key] = value.strip('"').strip('="')
-        print('summary')
-
 
     data = data[8:-3]
     # Process and save data to the Transaction database

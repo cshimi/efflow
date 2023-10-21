@@ -52,7 +52,7 @@ To run this Django project, follow these steps:
 
    # Start the development server
    python manage.py runserver
-   
+    ```
 ## Use Cases
 
 ### User Registration and Authentication
@@ -234,3 +234,9 @@ For more details on the code and specific functions, please refer to the actual 
 - Transaction is associated with Account and Category. It seems like you have foreign keys in the Transaction class, which means a Transaction is linked to an Account and a Category.
 - TransactionCSV is associated with a File. This suggests that TransactionCSV has a relationship with some other class or object named "File."
 
+
+#
+## Activate enviroment 
+ ```bash
+ /Users/christianashimitra/anaconda3/bin/activate && conda activate /Users/christianashimitra/anaconda3/envs/MachineLearningTraining; 
+ ```
